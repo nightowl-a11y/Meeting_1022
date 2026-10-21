@@ -18,7 +18,7 @@ button:disabled{opacity:.6;cursor:wait}#m{margin:14px 0 0;min-height:1.4em}#m.er
 <input id="c" placeholder="XXXX-XXXX-XXXX" aria-label="접속 코드" autofocus spellcheck="false">
 <button id="b">열기</button><p id="m" role="status"></p></form>
 <script>
-const SALT="GAB0J9ZpSeSCfOWwz4Wcwg==",ITER=600000;
+const SALT="7mvWJosGofK9+Fs9fGAVfA==",ITER=600000;
 const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
 let key;
 async function dec(name){const r=await fetch("d/"+name,{cache:"no-store"});if(!r.ok)throw new Error("파일을 받지 못했어요 ("+r.status+")");
